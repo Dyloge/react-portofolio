@@ -1,27 +1,149 @@
 import React from 'react';
-import Amir from '../image/Amir Najafi.jpg'
+import Amir from '../image/Amir Najafi.jpg';
+import styled from 'styled-components';
 
 export default function AboutSection() {
     return (
         <div>
-            <div className="description">
-                <div className="title">
-                    <div className="hide">
-                       <h2><span>Self-education</span> is, I firmly believe,</h2> 
-                    </div>                    
-                    <div className="hide">
-                        <h2>the only kind of education there is.</h2>
-                    </div>                    
-                    <div className="hide">
-                        <h2>Isaac Asimov</h2>
+            <StyledAbout className='about'>
+                <StyledDescription>
+                    <div className="title">
+                        <div className="hide">
+                        <h2><span className='colored-text'>Self-education</span> is, I firmly believe,</h2> 
+                        </div>                    
+                        <div className="hide">
+                            <h2>the only kind of education there is.</h2>
+                        </div>                    
+                        <div className="hide">
+                            <h6>Isaac Asimov</h6>
+                        </div>
                     </div>
-                </div>
-                <p>Hire me for front-end web developing</p>
-                <button>Contact Me</button>
-            </div>
-            <div className="image">
-                <img src={Amir} alt="Amir Najafi" />
-            </div>
+                    
+                    <button className='btn'><span>Contact Me</span></button>
+                </StyledDescription>
+                <StyledHeroContainer>
+                    <StyledMainContainer className='main-container'>
+                        <StyledPicContainer>
+                            <a href="#"><StyledPic src={Amir}/></a>
+                        </StyledPicContainer>
+                        <StyledCourseContainer className='course-container'>
+                            <StyledCourseInfo>
+                                <StyledCourseIntro>Check out My Online Course</StyledCourseIntro>
+                                <StyledCourseTitle>React, simplified</StyledCourseTitle>
+                                <StyledCourseSlogan>
+                        React from scratch for beginners
+                                </StyledCourseSlogan>
+                                <StyledCurrentPrice>$28.00</StyledCurrentPrice>
+                                <StyledOldPrice>$44.99</StyledOldPrice>
+                                <StyledBuyBtn>Buy now</StyledBuyBtn>
+                            </StyledCourseInfo>
+                        </StyledCourseContainer>
+                    </StyledMainContainer> 
+                </StyledHeroContainer>
+            </StyledAbout>
         </div>
     )
 }
+
+//Styled Components
+const StyledAbout =styled.div `
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    color: #d8d8d8;
+    `
+const StyledDescription =styled.div`
+    flex:1;
+    padding-right: 5rem;
+    h2{
+        font-weight:lighter;
+    }
+`
+
+const StyledHeroContainer = styled.div`
+	margin: auto;
+    display: flex;
+`
+const StyledMainContainer = styled.div`
+	width: 270px;
+	height: 540px;
+	position: relative;
+	margin: 0 20px;
+    opacity: 1;
+	animation: bounceIn 0.9s linear;
+`
+const StyledPicContainer = styled.div`
+	width: 230px;
+	position: absolute;
+	left: 20px;
+	z-index: 1;
+    margin:auto;
+    
+`
+const StyledPic = styled.img`
+	width: 100%;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+`
+const StyledCourseIntro =styled.div`
+    text-transform: uppercase;
+    color:#b43030;
+;
+`
+const StyledCourseContainer = styled.div`
+	background: #fff;
+	width: 270px;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	position: absolute;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	opacity: 0; 
+    font-weight:0.5rem;
+    background-color:#000000;
+`
+const StyledCourseInfo = styled.div`
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+`
+const StyledCourseTitle = styled.h4`
+	text-transform: uppercase;
+    color: white;
+`
+const StyledCourseSlogan = styled.p`
+    color: #a8a8a8;
+    font-size: 0.7rem;
+`
+const StyledCurrentPrice = styled.p`
+    color: #b43030;
+    font-size: 0.7rem;
+    font-weight: bold;
+`
+const StyledOldPrice = styled.p`
+	color: #a8a8a8;
+	text-decoration: line-through;
+    font-size: 0.6rem;
+`
+const StyledBuyBtn = styled.button`
+	cursor: pointer;
+	width: 100%;
+	background: #2f2f2f;
+	color: white;
+	padding: 15px 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    &:hover {
+        background-color: #5a5959;
+    }
+`
+
+
+
