@@ -46,46 +46,46 @@ export default function ServicesSection() {
                                 <div className="icon" id = 'react-logo' style={{ width: 50, height: 50 }}></div>
                                 <h3>React</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
+
                         </StyledCard>
                         <StyledCard>
                             <div>                            
                                 <div className="icon" id = 'js-logo' style={{ width: 50, height: 50 }}></div>
-                                <h3>Javascript</h3>
+                                <h3>Js</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
+
                         </StyledCard>
                         <StyledCard>
                             <div className="icon">
                                 <StyledIcon className='htmlLogo'src={htmlLogo} alt="html logo"/>
                                 <h3>Html</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
+
                         </StyledCard>
-                        <div className="card">
-                            <div className="icon" >
+                        <StyledCard>
+                            <div className="icon">
                                 <StyledIcon src={cssLogo} alt="css logo"/>
                                 <h3>Css</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>                        
+
+                        </StyledCard>                        
                         <StyledCard>
                             <div className="icon" >
                                 <StyledIcon src={sassLogo} alt="html logo"/>
                                 <h3>Sass</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
+
                         </StyledCard>
                         <StyledCard>
                             <div className="icon" >
                                 <StyledIcon src={bootstrapLogo} alt="html logo"/> 
                                 <h3>Bootstrap</h3>
                             </div>
-                            <p>Lorem ipsum dolor sit amet.</p>
                         </StyledCard>
                     </StyledCards>
-                    <div id = 'animation'></div>
+                    
                 </StyledDescription>
+                <StyledAnimation id = 'animation'></StyledAnimation>
             </StyledServices>
         </div>
     )
@@ -99,20 +99,31 @@ const StyledIcon = styled.img`
 `
 const StyledServices = styled(StyledAbout)`
 h2 {
-    padding-bottom: 5rem;
-    }
-p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
+    padding-bottom: 3.5rem;
 }
+h3 {
+     font-size: 0.7rem;
+}
+
 `
 const StyledCards = styled.div `
- display: flex;
- flex-wrap: wrap;
+ display: grid;
+ grid-template-columns: auto auto auto;
+ 
 `
  const StyledCard = styled.div `
- display: flex;
- align-items: center;
+ text-align: center;
+ justify-content: center;
+ padding: 50px;
+
+ `
+ const StyledAnimation = styled.div`
+ width : 100%;
+ height: 100vh;
+
+
+
+ 
  `
 
 

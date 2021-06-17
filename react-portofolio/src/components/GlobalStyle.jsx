@@ -37,7 +37,7 @@ body {
 	font-size: 20px;
 	position: relative;
 	display: inline-block;
-	width:100%;
+
 	
 	&::before,&::after{
 		position: absolute;

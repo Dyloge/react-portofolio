@@ -5,8 +5,9 @@ export const StyledAbout =styled.div `
     min-height: 90vh;
     display: flex;
     justify-content: space-between;
-    padding: 5rem 10rem;
+    padding: 5rem 2rem;
     color: #d8d8d8;
+
     `
 export const StyledDescription =styled.div`
     flex:1;

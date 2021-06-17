@@ -52,6 +52,8 @@ export default function AboutSection() {
 const StyledHeroContainer = styled.div`
 	margin: auto;
     display: flex;
+
+
 `
 const StyledMainContainer = styled.div`
 	width: 270px;
