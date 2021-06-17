@@ -9,7 +9,12 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
     background-color: #131313;
+	color:#d8d8d8;
 }
+
+
+
+
 .colored-text {
 	color: #b43030;
 }
@@ -59,7 +64,7 @@ body {
 }
 .main-container:hover .course-container {
 	opacity: 1;
-	animation: bounceIn 1s linear;
+	animation: bounceIn 1.2s linear;
 }
 
 

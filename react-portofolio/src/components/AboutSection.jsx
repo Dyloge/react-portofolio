@@ -1,6 +1,7 @@
 import React from 'react';
 import Amir from '../image/Amir Najafi.jpg';
 import styled from 'styled-components';
+import { StyledAbout, StyledDescription } from '../styles';
 
 export default function AboutSection() {
     return (
@@ -46,20 +47,7 @@ export default function AboutSection() {
 }
 
 //Styled Components
-const StyledAbout =styled.div `
-    min-height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem 10rem;
-    color: #d8d8d8;
-    `
-const StyledDescription =styled.div`
-    flex:1;
-    padding-right: 5rem;
-    h2{
-        font-weight:lighter;
-    }
-`
+
 
 const StyledHeroContainer = styled.div`
 	margin: auto;
@@ -71,7 +59,7 @@ const StyledMainContainer = styled.div`
 	position: relative;
 	margin: 0 20px;
     opacity: 1;
-	animation: bounceIn 0.9s linear;
+	animation: bounceIn 1.2s linear;
 `
 const StyledPicContainer = styled.div`
 	width: 230px;
@@ -79,7 +67,6 @@ const StyledPicContainer = styled.div`
 	left: 20px;
 	z-index: 1;
     margin:auto;
-    
 `
 const StyledPic = styled.img`
 	width: 100%;
@@ -88,7 +75,6 @@ const StyledPic = styled.img`
 const StyledCourseIntro =styled.div`
     text-transform: uppercase;
     color:#b43030;
-;
 `
 const StyledCourseContainer = styled.div`
 	background: #fff;
