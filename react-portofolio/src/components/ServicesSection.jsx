@@ -39,7 +39,7 @@ export default function ServicesSection() {
         <div>
             <StyledServices>
                 <StyledDescription>
-                    <h2>Skills, <span>up to now</span></h2>
+                    <h2>Skills, <span className = 'colored-text'>up to now</span></h2>
                     <StyledCards>
                         <StyledCard>
                             <div>                            
