@@ -74,17 +74,19 @@ const StyledAccordionItem=styled.div `
     overflow: hidden;
     .tab-label::after {
         font-family: "Font Awesome 5 Free";
-	content: '\f0dd';
+	content: '\f054';
 	font-weight: bold;
     color: #b43030;
+    margin-left: 10px;
     }
     input:checked {
   + .tab-label {
 
     &::after {
       transform: rotate(90deg);
-      content: '\f0de';
+      content: '\f078';
       color: #b43030;
+      margin-left: 10px;
     }
   }
   ~ .tab-content {
