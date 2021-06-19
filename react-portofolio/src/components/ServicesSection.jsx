@@ -43,14 +43,14 @@ export default function ServicesSection() {
                     <StyledCards>
                         <StyledCard>
                             <div>                            
-                                <div className="icon" id = 'react-logo' style={{ width: 50, height: 50 }}></div>
+                                <div className="icon" id = 'react-logo' style={{ width: 70, height: 70 }}></div>
                                 <h3>React</h3>
                             </div>
 
                         </StyledCard>
                         <StyledCard>
                             <div>                            
-                                <div className="icon" id = 'js-logo' style={{ width: 50, height: 50 }}></div>
+                                <div className="icon" id = 'js-logo' style={{ width: 70, height: 70 }}></div>
                                 <h3>Js</h3>
                             </div>
 
@@ -94,12 +94,12 @@ export default function ServicesSection() {
 
 const StyledIcon = styled.img`
     filter: invert(23%) sepia(76%) saturate(1629%) hue-rotate(337deg) brightness(94%) contrast(95%);
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 `
 const StyledServices = styled(StyledAbout)`
 h2 {
-    padding-bottom: 3.5rem;
+    padding-bottom: 0.5rem;
 }
 h3 {
      font-size: 0.7rem;
@@ -114,7 +114,7 @@ const StyledCards = styled.div `
  const StyledCard = styled.div `
  text-align: center;
  justify-content: center;
- padding: 50px;
+ padding: 40px;
 
  `
  const StyledAnimation = styled.div`
