@@ -8,9 +8,11 @@ export default function Nav() {
 
             <StyledNav>
                 <div>
-                    <StyledLogoContainer>
-                        <StyledLogo src={logo} alt="" />
-                    </StyledLogoContainer>
+                    <Link to='/'>
+                        <StyledLogoContainer>
+                            <StyledLogo src={logo} alt="" />
+                        </StyledLogoContainer>
+                    </Link>
                     <StyledTitleContainer>
                         <Link id= 'logo' to='/'>Amir Najafi</Link>
                         <h6>Front-end Web Developer</h6>
