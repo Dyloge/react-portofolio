@@ -1,28 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../image/1.png'
+import logo from '../image/1.png';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
     return (
-        <div>
+
             <StyledNav>
                 <div>
                     <StyledLogoContainer>
                         <StyledLogo src={logo} alt="" />
                     </StyledLogoContainer>
                     <StyledTitleContainer>
-                        <a id= 'logo' href="#">Amir Najafi</a>
+                        <Link id= 'logo' to='/'>Amir Najafi</Link>
                         <h6>Front-end Web Developer</h6>
                     </StyledTitleContainer>
                 </div>
                 <ul>
-                    <li><a href="#"></a>About Me</li>
-                    <li><a href="#"></a>Sample Projects</li>
-                    <li><a href="#"></a>Future Plans</li>
+                    <li><Link to='/'>About Me</Link></li>
+                    <li><Link to='/sample'>Sample Projects</Link></li>
+                    <li><Link to='/future'>Future Plans</Link></li>
                 </ul>
             </StyledNav>
             
-        </div>
+
     )
 }
 const StyledNav=styled.nav `

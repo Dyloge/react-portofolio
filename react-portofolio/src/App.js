@@ -1,6 +1,11 @@
 import AboutUs from "./pages/AboutUs";
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
+import SampleProjects from "./pages/SampleProjects";
+import FuturePlans from "./pages/FuturePlans";
+//Router
+import {Switch, Route} from 'react-router-dom';
+
 
 
 function App() {
@@ -8,8 +13,17 @@ function App() {
     <div className="App">
       <GlobalStyle/>
       <Nav/>
-      <AboutUs/>
-      
+      <Switch>
+        <Route path='/' exact>
+          <AboutUs/>
+        </Route>
+        <Route path='/sample'>
+          <SampleProjects/>
+        </Route>
+        <Route path='/future'>
+          <FuturePlans/>
+        </Route>
+      </Switch>
     </div>
   );
 }
