@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import FirstGif from '../image/FirstGif.gif';
+import FirstGif from '../image/????'
 import SecondGif from '../image/SecondGif.gif';
 import ThirdGif from '../image/ThirdGif.gif';
 import ForthGif from '../image/ForthGif.gif';
