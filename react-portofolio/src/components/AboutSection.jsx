@@ -10,36 +10,36 @@ export default function AboutSection() {
                 <StyledDescription>
                     <div className="title">
                         <div className="hide">
-                        <h2><span className='colored-text'>Self-education</span> is, I firmly believe,</h2> 
-                        </div>                    
+                            <h2><span className='colored-text'>Self-education</span> is, I firmly believe,</h2>
+                        </div>
                         <div className="hide">
                             <h2>the only kind of education there is.</h2>
-                        </div>                    
+                        </div>
                         <div className="hide">
                             <h6>Isaac Asimov</h6>
                         </div>
                     </div>
-                    
+
                     <button className='btn'><span>Contact Me</span></button>
                 </StyledDescription>
                 <StyledHeroContainer>
                     <StyledMainContainer className='main-container'>
                         <StyledPicContainer>
-                            <a href="#"><StyledPic src={Amir}/></a>
+                            <a href="#"><StyledPic src={Amir} /></a>
                         </StyledPicContainer>
                         <StyledCourseContainer className='course-container'>
                             <StyledCourseInfo>
                                 <StyledCourseIntro>Check out My Online Course</StyledCourseIntro>
                                 <StyledCourseTitle>React, simplified</StyledCourseTitle>
                                 <StyledCourseSlogan>
-                        React from scratch for beginners
+                                    React from scratch for beginners
                                 </StyledCourseSlogan>
                                 <StyledCurrentPrice>$28.00</StyledCurrentPrice>
                                 <StyledOldPrice>$44.99</StyledOldPrice>
                                 <StyledBuyBtn>Buy now</StyledBuyBtn>
                             </StyledCourseInfo>
                         </StyledCourseContainer>
-                    </StyledMainContainer> 
+                    </StyledMainContainer>
                 </StyledHeroContainer>
             </StyledAbout>
         </div>
@@ -74,7 +74,7 @@ const StyledPic = styled.img`
 	width: 100%;
 	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
 `
-const StyledCourseIntro =styled.div`
+const StyledCourseIntro = styled.div`
     text-transform: uppercase;
     color:#b43030;
 `
